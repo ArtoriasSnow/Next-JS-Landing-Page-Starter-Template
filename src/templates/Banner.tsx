@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { Background } from '../background/Background';
 
 import { Button } from '../button/Button';
 import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
 
 const Banner = () => (
+  <Background color="bg-blue-900">
   <Section>
     <CTABanner
       title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -18,6 +20,7 @@ const Banner = () => (
       }
     />
   </Section>
+  </Background>
 );
 
 export { Banner };
